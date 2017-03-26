@@ -1,0 +1,27 @@
+// Variables
+$yellow: #FAD157;
+$orange: #F19E26;
+$blue-dark: #00447F;
+
+// Base
+
+body {
+    background-color: $yellow;
+}
+
+.jf-subtitle {
+    color: $blue-dark;
+}
+
+.jf-page {
+    &--home {
+        color: $orange;
+    }
+}
+
+.jf {
+    &-header {
+        background-color: $blue-dark;
+        color: $yellow;
+    }
+}

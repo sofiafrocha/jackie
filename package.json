@@ -1,0 +1,23 @@
+{
+  "name": "jackie",
+  "version": "1.0.0",
+  "description": "web dev tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "gulp",
+    "jekyll",
+    "html",
+    "css",
+    "scss",
+    "portfolio"
+  ],
+  "author": "Sofia F. Rocha",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
