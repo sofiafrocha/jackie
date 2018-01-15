@@ -1,13 +1,111 @@
 @import url(../../../node_modules/normalize.css/normalize.css);
+@import url("https://fonts.googleapis.com/css?family=Nunito:600,700");
 body {
-  background-color: #FAD157; }
+  background-color: #FAD157;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  line-height: 1.3; }
+
+a {
+  color: #00447F;
+  font-weight: bold; }
+
+.container {
+  padding: 0px 30px;
+  text-align: center; }
+
+.jf-button {
+  display: inline-block;
+  padding: 13px 23px;
+  border-radius: 9px;
+  border-bottom: 5px solid #e08a0e;
+  background-color: #F19E26;
+  text-decoration: none; }
 
 .jf-subtitle {
   color: #00447F; }
 
-.jf-page--home {
-  color: #F19E26; }
+.jf-work-element {
+  margin: 20px auto;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: pink;
+  background-image: url("../../scr/img/work1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3); }
+  .jf-work-element:hover .jf-work-overlay {
+    opacity: 1; }
+
+.jf-work-overlay {
+  background-color: pink;
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px; }
 
 .jf-header {
   background-color: #00447F;
   color: #FAD157; }
+  .jf-header-main {
+    padding: 25px 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .jf-header-secondary {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-height: 0px;
+    overflow: hidden;
+    background-color: #003666;
+    font-size: 16px;
+    transition: max-height 0.25s ease-in-out; }
+    .jf-header-secondary ol {
+      padding: 25px 35px;
+      margin: 0px;
+      list-style: none; }
+      .jf-header-secondary ol a {
+        padding: 4px 0px;
+        display: inline-block;
+        width: 100%;
+        color: #FAD157; }
+  .jf-header h1, .jf-header-title {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px; }
+  .jf-header:hover .jf-header-secondary, .jf-header-secondary--active {
+    max-height: 500px; }
+
+.jf-icon {
+  height: 75px;
+  width: auto; }
+
+.jf-logo {
+  height: 100px; }
+
+.jf-top, .jf-bio {
+  font-size: 24px; }
+
+.jf-top {
+  padding-top: 70px;
+  padding-bottom: 40px; }
+  .jf-top p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 220px; }
+  .jf-top strong {
+    color: #00447F; }
+  .jf-top .jf-button {
+    margin-top: 10px;
+    font-size: 20px; }
+
+.jf-page--home {
+  color: #F19E26; }
